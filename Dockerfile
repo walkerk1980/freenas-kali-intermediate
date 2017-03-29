@@ -6,3 +6,9 @@ LABEL org.freenas.interactive="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.command="/bin/bash" \
+      org.freenas.volumes="[				\
+          {						\
+              \"name\": \"/root\",		\
+              \"descr\": \"Presistance directory for roots home folder\"	\
+          }						\
+       ]"
