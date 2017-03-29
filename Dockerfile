@@ -4,7 +4,7 @@ RUN /bin/sed -i s/"PermitRootLogin prohibit-password"/"PermitRootLogin yes"/ /et
 RUN /bin/systemctl enable ssh
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump && hash –r
 LABEL org.freenas.interactive="true" \
-      org.freenas.version="2" \
+      org.freenas.version="3" \
       org.freenas.upgradeable="false" \
       org.freenas.port-mappings="2222:22/tcp" \
       org.freenas.expose-ports-at-host="true" \
