@@ -3,3 +3,4 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::=
 RUN /bin/sed -i s/"PermitRootLogin prohibit-password"/"PermitRootLogin yes"/ /etc/ssh/sshd_config
 RUN /bin/systemctl enable ssh
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump && hash –r
+RUN apt-clean
